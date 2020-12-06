@@ -1,0 +1,352 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.tmz{
+	clear:both;
+} 
+
+#ust {
+	overflow: hidden;
+	background-color: rgba(0,0,0, 0.7); 
+	padding: 12px 0px;
+	margin-bottom:5px;
+}
+
+#menuust {
+	float:left;
+	width:243px;
+	margin-top:15px;
+	background-color: rgba(0,0,0, 0.7); 
+	margin-left:45px;
+	
+}
+#menuust .anasayfa{
+	list-style-type:none;
+	margin:0px; 
+	padding:20px 5px;
+	margin-left:50px;
+}
+
+#menuust .anasayfa a {
+	display:block;
+	width:130px;
+	color:white;
+	text-decoration:none;
+	padding:4px 10px;
+}
+
+#menuust .anasayfa a:hover {
+	background-color: rgba(0,0,0, 0.3); 
+	color: white;
+}
+
+.baslik{
+	margin-left:550px;
+	width:200px;
+}
+
+.anaicerik{
+	float:right;
+	width:1200px;
+	margin-right:15px;
+	margin-top:-113px;
+}
+
+.slideshow-container {
+	max-width: 95%;
+	position: relative;
+	margin: auto;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+	.prev, .next,.text {font-size: 11px}
+}
+
+.bg-text {
+	background-color: rgba(0,0,0, 0.4); 
+	color: white;
+	font-weight: bold;
+	border: 3px solid #f1f1f1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 80%;
+	height: 80%;
+	padding: 100px;
+	text-align: center;
+}
+
+.bg-text h1{
+	font-size:50px;
+}
+
+#orta{
+	padding-left:10px;
+	padding-top:25px;
+}
+
+.konu {
+	position: relative;
+	width: 470px;
+}
+
+.resim {
+	display: block;
+	width: 375px;
+	height: auto;
+}
+
+.aciklama {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #808080	;
+	overflow: hidden;
+	width: 80%;
+	height: 30%;
+	transition: .5s ease;
+}
+
+.konu:hover .aciklama {
+	height: 100%;
+	background-color: rgba(128,128,128,0.70); 
+}
+
+.konu:hover .aciklama .aciklama1 a{
+	opacity: 100%;
+}
+
+.aciklama a{
+	
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	text-decoration:none;
+}
+
+.konu{
+	display:inline-block;
+	float:left;
+	margin-right:-80px;
+}
+
+#son #son1{
+	margin-top:10px;
+	padding:30px 0px;
+    background-color: rgba(0,0,0, 0.7); 
+}
+#son #son2{
+	padding:60px 0px;
+	padding-left:10px;
+    background-color: rgba(0,0,0, 0.6); 
+}
+
+#son .cizgi1{
+	background-color:white;
+	width:2px;
+	height:120px;
+	float:left;
+	margin-left:860px; 
+	margin-right:60px; 
+	margin-top:-118px;
+}
+
+#son .cizgi2{
+	background-color:white;
+	width:2px;
+	height:120px;
+	float:left;
+	margin-left:1120px; 
+	margin-right:50px; 
+	margin-top:-118px;
+}
+
+#sol{
+	float:left;
+	padding-top:15px;
+	padding-left:55px;
+}
+
+.solb{
+	width:150px;
+}
+
+.sols{
+	width:100px;
+}
+
+.orta1{
+	color:white;
+	margin-top:-15px;
+	height:100px;
+	float:left;
+	text-align:center;
+	padding-left:520px;
+}
+
+.orta2{
+	color:white;
+	margin-top:-130px;
+	height:100px;
+	float:left;
+	text-align:center;
+}
+
+.orta3{
+	color:white;
+	margin-top:-130px;
+	height:100px;
+	float:left;
+	text-align:center;
+}
+
+/*2. ve 3. Sayfa*/
+
+#icerik{
+	padding:15px 55px;
+}
+
+.icerikici { 
+	width:350px;
+	margin-bottom:10px;
+	float:left;
+	text-align:center;
+    background-color: rgba(0,0,0, 0.6); 
+	color: white;
+}
+
+.icerikici img{
+	width:350px;
+}
+
+.icerikici p{
+	padding:0px 5px;
+}
+
+.icerikici button{
+	background-color: rgba(0,0,0, 0.3); 
+	border: none;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	padding: 10px ;
+	width: 350px;
+	padding-left:250px;
+}
+
+
+/*4. 5. ve 6. Sayfa*/
+
+#icerik{
+	margin-top:-63px;
+}
+
+#icerik #bas {
+    background-color: rgba(0,0,0, 0.6); 
+	color: white;
+	margin-top:-21px;
+}
+
+#icerik #bas img{
+	width: 700px;
+	float:left;
+}
+
+#icerik #bas h1{
+	text-align:center;
+	padding:0px 20px;
+}
+
+#icerik #alt h2{
+	text-align:center;
+    background-color: rgba(0,0,0, 0.6); 
+	color: white;
+	padding:10px 0px;
+}
+
+#icerik #alt h3{
+	text-align:center;
+    background-color: rgba(0,0,0, 0.6); 
+	color: white;
+	padding:10px 0px;
+}
+
+#icerik #alt p{
+	text-indent:10px; 
+}
+

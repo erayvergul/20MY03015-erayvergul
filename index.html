@@ -1,0 +1,137 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FİTBLOG.COM</title>
+	<link rel="stylesheet" href="stil.css"/>
+</head>
+<body>
+
+<div id="ust">
+	<a href="index.html" class="anasayfa"><img src="resim/fitblog.png" alt="" class="baslik" /></a>
+</div>	<!--ust sonu-->
+
+<div id="menuust">
+	<div class="anasayfa">
+		<a href="antrenman.html">ANTERENMAN</a> <br />
+		<a href="beslenme.html">BESLENME</a>
+	</div><!--anasayfa sonu-->
+</div>	<!--menuust sonu-->
+<div class="tmz"></div>
+
+<div class="anaicerik">
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="resim/r1.jpg" style="width:100%">
+			<div class="bg-text">
+				<h1>SAĞLIKLI ÖĞÜNLERİ NASIL PLANLAMALISIN?</h1>
+			</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="resim/r2.jpg" style="width:100%">
+			<div class="bg-text">
+				<h1>EN ETKİLİ 12 PİLATES TOPU HAREKETİ</h1>
+			</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="resim/r3.jpg" style="width:100%">
+			<div class="bg-text">
+				<h1>ANTRENMAN VERİMLİLİĞİNİ ZİRVEYE TAŞI!</h1>
+			</div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>	
+		
+	<div id="orta">
+		<div class="konu">
+		  <img src="resim/resim.jpg" alt="" class="resim">
+		  <div class="aciklama">
+			<div class="aciklama1"><a href="menu1.html">BAĞIŞIKLIĞINI NASIL GÜÇLENDİREBİLİRSİN?</a></div>
+		  </div>
+		</div><!--konu sonu-->
+		<div class="konu">
+		  <img src="resim/resim2.jpg" alt="" class="resim">
+		  <div class="aciklama">
+			<div class="aciklama1"><a href="menu2.html">YAĞ ORANINI NASIL AZALTABİLİRSİN?</a></div>
+		  </div>
+		</div><!--konu sonu-->
+		<div class="konu">
+		  <img src="resim/resim3.jpg" alt="" class="resim">
+		  <div class="aciklama">
+			<div class="aciklama1"><a href="menu3.html">EVDE YAPABİLECEĞİN KOL HAREKETLERİ</a></div>
+		  </div>
+		</div><!--konu sonu-->
+		<div class="tmz"></div>
+	</div> <!--orta sonu-->
+</div><!--anaicerik sonu-->
+<div class="tmz"></div>
+	
+<div id="son">
+	<div id="son1"></div>
+	<div id="son2">
+		<div id="sol">
+			<img src="resim/fitblog.png" alt=""  class="solb"/> <br />
+			<img src="resim/sosyal.png" alt=""  class="sols"/>
+		</div><!--sol sonu-->
+		<div class="orta1">
+			<h3>Fit Blog</h3>
+			<p>Hakkımızda</p>
+			<p>İletişim</p>
+		</div><!--orta1 sonu-->
+		<div class="tmz"></div>
+		<div class="cizgi1" ></div>
+		<div class="orta2">
+			<h3>Kurumsal</h3>
+			<p>Gizlilik Politikası</p>
+			<p>Kullanım Koşulları</p>
+		</div><!--orta2 sonu-->
+		<div class="tmz"></div>
+		<div class="cizgi2"></div>
+		<div class="orta3">
+			<h3>Abonelik</h3>
+			<p>Dergi</p>
+		</div><!--orta3 sonu-->
+		<div class="tmz"></div>
+	</div><!--son2 sonu-->
+</div><!--son sonu-->
+
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+	}
+</script>
+
+</body>
+</html>
